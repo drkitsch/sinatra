@@ -1,7 +1,3 @@
-require 'sinatra'
-require 'sinatra/reloader' if development?
-
-
 get '/' do 
   'Hi, Harry!'
 end 
@@ -15,6 +11,7 @@ get '/moffy' do
 end 
 
 get '/cat' do 
-  erb(:index)
+  "<div style='border: 10px dashed red'>
+    <img src='http://placekitten.com/500/500'>
+   </div>"
 end 
-
